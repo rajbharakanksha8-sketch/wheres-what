@@ -1,0 +1,40 @@
+{
+  "settings": { "locations": ["Loft", "TV unit", "Unplaced"], "members": ["Akanksha", "Kalpak", "Rupak"] },
+  "boxes": [
+    {
+      "code": "ELE-01", "cat": "ELE", "name": "Airtel box (adapters)", "location": "Loft",
+      "items": [{ "name": "Power adapters (2-pin)" }, { "name": "DC barrel-pin chargers" }, { "name": "Phone chargers" }, { "name": "Loose charger cables" }],
+      "notes": "",
+      "photoFiles": ["ele01-label.jpg", "ele01-outside.jpg", "ele01-inside.jpg"],
+      "history": [{ "from": "TV unit", "to": "Loft", "at": "2026-11-02T15:00:00.000Z", "by": "Akanksha" }]
+    },
+    {
+      "code": "ELE-02", "cat": "ELE", "name": "All cables", "location": "Loft",
+      "items": [{ "name": "HDMI cables" }, { "name": "LAN / ethernet cables (yellow, grey)" }, { "name": "USB to micro-USB cables" }, { "name": "AUX 3.5mm cables" }, { "name": "RCA audio cable (red/white)" }, { "name": "Power cord (UK plug to figure-8)" }, { "name": "HDMI to VGA converter" }, { "name": "Bagged cables (unsorted)" }],
+      "notes": "",
+      "photoFiles": ["ele02-label.jpg", "ele02-inside.jpg", "ele02-inside2.jpg", "ele02-powercord.jpg"],
+      "history": [{ "from": "TV unit", "to": "Loft", "at": "2026-11-02T15:00:00.000Z", "by": "Akanksha" }]
+    },
+    {
+      "code": "MSC-01", "cat": "MSC", "name": "Amazon box (jacket, soundbar, bags)", "location": "Unplaced",
+      "items": [{ "name": "Bike jacket", "owner": "Navneet" }, { "name": "Small fan" }, { "name": "F&D soundbar" }, { "name": "Camera bag (Olympus OM-D strap)" }, { "name": "Cream cushion (zippered)" }, { "name": "Olive canvas waist bag" }],
+      "notes": "Soundbar's cable may be in ELE-02.",
+      "photoFiles": ["msc01-label.jpg", "msc01-inside.jpg", "msc01-soundbar.jpg", "msc01-camerabag.jpg", "msc01-cushion.jpg", "msc01-waistbag.jpg"],
+      "history": [{ "to": "Unplaced", "at": "2026-11-02T15:30:00.000Z", "by": "Akanksha" }]
+    },
+    {
+      "code": "DEC-01", "cat": "DEC", "name": "Decor antiques (fragile)", "location": "Unplaced",
+      "items": [{ "name": "Soapstone jaali incense holder" }, { "name": "Soapstone aroma oil burner" }, { "name": "Gold metal decorative stand" }, { "name": "Painted wooden coasters" }, { "name": "Wooden bowl" }, { "name": "Egyptian-style wooden pen holder" }, { "name": "Carved wooden piece" }],
+      "notes": "Fragile. Keep on top of the stack.",
+      "photoFiles": ["dec01-label.jpg", "dec01-inside.jpg"],
+      "history": [{ "to": "Unplaced", "at": "2026-11-02T15:35:00.000Z", "by": "Akanksha" }]
+    },
+    {
+      "code": "FES-01", "cat": "FES", "name": "Diwali decor", "location": "Unplaced",
+      "items": [{ "name": "Brass diyas" }, { "name": "Gold hanging bells" }, { "name": "LED tea-light candles" }, { "name": "Gold bead / leaf garlands" }, { "name": "Copper-wire fairy lights" }, { "name": "Gold lattice tea-light holder" }],
+      "notes": "Needed for Diwali. Keep in front.",
+      "photoFiles": ["fes01-label.jpg", "fes01-inside.jpg"],
+      "history": [{ "to": "Unplaced", "at": "2026-11-02T15:37:00.000Z", "by": "Akanksha" }]
+    }
+  ]
+}

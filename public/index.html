@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Where's What</title>
+<meta name="description" content="Find which box anything is in, and where that box is kept.">
+<meta name="theme-color" content="#F2F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131512" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Where's What">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Where's <span>What</span></h1>
+      <div class="row">
+        <label class="who" for="who">I'm <select id="who"></select></label>
+        <button class="iconbtn" id="settingsBtn" aria-label="Places and people"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></button>
+      </div>
+    </div>
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Find anything: HDMI, diya, jacket, ELE-02…" autocomplete="off" aria-label="Search boxes and items">
+      <button id="qclear" hidden>Clear</button>
+    </div>
+    <div class="chips" id="placeChips" aria-label="Filter by place"></div>
+    <div class="chips" id="typeChips" aria-label="Filter by type or person"></div>
+  </header>
+  <div id="status" class="status" hidden></div>
+  <div class="summary" id="summary"></div>
+  <main class="grid" id="grid"></main>
+</div>
+<button class="fab" id="fab" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Add box</button>
+<div class="sheet" id="sheet" hidden><div class="sheet-in" id="sheetIn"></div></div>
+<div class="lightbox" id="lightbox" hidden><img id="lbimg" alt=""></div>
+
+<div class="gate" id="login" hidden>
+  <form class="gate-in" id="loginForm">
+    <img src="/icons/icon-192.png" alt="">
+    <h1>Where's <span>What</span></h1>
+    <p>Enter the family PIN</p>
+    <input class="pin" id="pin" type="password" inputmode="numeric" autocomplete="current-password" aria-label="Family PIN" required>
+    <button class="btn primary" id="loginBtn" type="submit">Open</button>
+    <div class="err" id="loginErr"></div>
+  </form>
+</div>
+<div class="gate" id="whoGate" hidden>
+  <div class="gate-in">
+    <h1>Who's <span>this?</span></h1>
+    <p>Moves get recorded under this name. You can change it later from the top bar.</p>
+    <div class="whogrid" id="whoGrid"></div>
+  </div>
+</div>
+</body>
+</html>
